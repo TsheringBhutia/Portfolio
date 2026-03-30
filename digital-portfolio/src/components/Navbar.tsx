@@ -52,7 +52,7 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="ml-4 px-4 py-2 border border-indigo-500 text-indigo-400 rounded hover:bg-indigo-500 hover:text-white transition-colors">
+              <a href={process.env.NODE_ENV === "production" ? "/Portfolio/resume.pdf" : "/resume.pdf"} target="_blank" rel="noreferrer" className="ml-4 px-4 py-2 border border-indigo-500 text-indigo-400 rounded hover:bg-indigo-500 hover:text-white transition-colors">
                 Resume
               </a>
             </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="mt-2 w-max px-4 py-2 border border-indigo-500 text-indigo-400 rounded hover:bg-indigo-500 hover:text-white transition-colors text-center">
+              <a href={process.env.NODE_ENV === "production" ? "/Portfolio/resume.pdf" : "/resume.pdf"} target="_blank" rel="noreferrer" className="mt-2 w-max px-4 py-2 border border-indigo-500 text-indigo-400 rounded hover:bg-indigo-500 hover:text-white transition-colors text-center">
                 View Resume
               </a>
             </div>
