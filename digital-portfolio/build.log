@@ -1,0 +1,339 @@
+
+> digital-portfolio@0.1.0 build
+> next build
+
+▲ Next.js 16.2.1 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 15 errors:
+./src/app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module './lib/source-map-generator'
+    at node_modules/source-map-js/source-map.js:6:30 [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\node_modules_0z8m..y._.js:1162:15]
+    at module evaluation (node_modules/source-map-js/source-map.js:6:30) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\node_modules_0z8m..y._.js:1165:3]
+    at moduleFactory (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:57:5) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:840:9]
+    at instantiateModule (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:90:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:864:12]
+    at getOrInstantiateModuleFromParent (turbopack:///[turbopack]/shared/runtime/runtime-utils.ts:440:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:289:12]
+    at module evaluation (node_modules/next/node_modules/postcss/lib/map-generator.js:3:46) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\node_modules_0z8m..y._.js:1547:71]
+    at moduleFactory (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:57:5) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:840:9]
+    at instantiateModule (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:90:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:864:12]
+    at getOrInstantiateModuleFromParent (turbopack:///[turbopack]/shared/runtime/runtime-utils.ts:440:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:289:12]
+    at MapGenerator (node_modules/next/node_modules/postcss/lib/lazy-result.js:4:5) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\node_modules_0z8m..y._.js:3094:42]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+./node_modules/source-map-js/source-map.js:7:29
+Module not found: Can't resolve './lib/source-map-consumer'
+  [90m5 |[0m [90m */[0m
+  [90m6 |[0m exports.[33mSourceMapGenerator[0m = require([32m'./lib/source-map-generator'[0m).[33mSourceMapGenerator[0m;
+[31m[1m>[0m [90m7 |[0m exports.[33mSourceMapConsumer[0m = require([32m'./lib/source-map-consumer'[0m).[33mSourceMapConsumer[0m;
+  [90m  |[0m                             [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m8 |[0m exports.[33mSourceNode[0m = require([32m'./lib/source-node'[0m).[33mSourceNode[0m;
+  [90m9 |[0m
+
+
+
+Import trace:
+  postcss:
+    ./node_modules/source-map-js/source-map.js
+    ./node_modules/next/node_modules/postcss/lib/input.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.mjs
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/source-map-js/source-map.js:6:30
+Module not found: Can't resolve './lib/source-map-generator'
+  [90m4 |[0m [90m * http://opensource.org/licenses/BSD-3-Clause[0m
+  [90m5 |[0m [90m */[0m
+[31m[1m>[0m [90m6 |[0m exports.[33mSourceMapGenerator[0m = require([32m'./lib/source-map-generator'[0m).[33mSourceMapGenerator[0m;
+  [90m  |[0m                              [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m exports.[33mSourceMapConsumer[0m = require([32m'./lib/source-map-consumer'[0m).[33mSourceMapConsumer[0m;
+  [90m8 |[0m exports.[33mSourceNode[0m = require([32m'./lib/source-node'[0m).[33mSourceNode[0m;
+  [90m9 |[0m
+
+
+
+Import trace:
+  postcss:
+    ./node_modules/source-map-js/source-map.js
+    ./node_modules/next/node_modules/postcss/lib/input.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.mjs
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/source-map-js/source-map.js:8:22
+Module not found: Can't resolve './lib/source-node'
+  [90m6 |[0m exports.[33mSourceMapGenerator[0m = require([32m'./lib/source-map-generator'[0m).[33mSourceMapGenerator[0m;
+  [90m7 |[0m exports.[33mSourceMapConsumer[0m = require([32m'./lib/source-map-consumer'[0m).[33mSourceMapConsumer[0m;
+[31m[1m>[0m [90m8 |[0m exports.[33mSourceNode[0m = require([32m'./lib/source-node'[0m).[33mSourceNode[0m;
+  [90m  |[0m                      [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m9 |[0m
+
+
+
+Import trace:
+  postcss:
+    ./node_modules/source-map-js/source-map.js
+    ./node_modules/next/node_modules/postcss/lib/input.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.js
+    ./node_modules/next/node_modules/postcss/lib/postcss.mjs
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/@react-three/fiber/dist/events-5a94e5eb.esm.js:6:1
+Module not found: Can't resolve 'scheduler'
+  [90m4 |[0m [36mimport[0m { createWithEqualityFn } [36mfrom[0m [32m'zustand/traditional'[0m;
+  [90m5 |[0m [36mimport[0m { suspend, preload, clear } [36mfrom[0m [32m'suspend-react'[0m;
+[31m[1m>[0m [90m6 |[0m [36mimport[0m [33mTb[0m, { unstable_scheduleCallback, unstable_IdlePriority } [36mfrom[0m [32m'scheduler'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m [36mimport[0m { jsx, [33mFragment[0m } [36mfrom[0m [32m'react/jsx-runtime'[0m;
+  [90m8 |[0m [36mimport[0m { useFiber, useContextBridge, traverseFiber } [36mfrom[0m [32m'its-fine'[0m;
+  [90m9 |[0m
+
+
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./node_modules/@react-three/fiber/dist/events-5a94e5eb.esm.js [Client Component Browser]
+    ./src/components/canvas/Hero3D.tsx [Client Component Browser]
+    ./src/components/HeroSection.tsx [Client Component Browser]
+    ./src/components/HeroSection.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./node_modules/@react-three/fiber/dist/events-5a94e5eb.esm.js [Client Component Browser]
+    ./node_modules/@react-three/drei/core/ContactShadows.js [Client Component Browser]
+    ./src/components/canvas/Skills3D.tsx [Client Component Browser]
+    ./src/components/SkillsSection.tsx [Client Component Browser]
+    ./src/components/SkillsSection.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/@react-three/fiber/dist/react-three-fiber.esm.js:10:1
+Module not found: Can't resolve 'scheduler'
+  [90m 8 |[0m [36mimport[0m [32m'zustand/traditional'[0m;
+  [90m 9 |[0m [36mimport[0m [32m'suspend-react'[0m;
+[31m[1m>[0m [90m10 |[0m [36mimport[0m [32m'scheduler'[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m
+  [90m12 |[0m [36mfunction[0m [33mCanvasImpl[0m({
+  [90m13 |[0m   ref,
+
+
+
+Import trace:
+  Client Component Browser:
+    ./node_modules/@react-three/fiber/dist/react-three-fiber.esm.js [Client Component Browser]
+    ./src/components/canvas/Skills3D.tsx [Client Component Browser]
+    ./src/components/SkillsSection.tsx [Client Component Browser]
+    ./src/components/SkillsSection.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./node_modules/react-dom/cjs/react-dom-client.production.js:15:17
+Module not found: Can't resolve 'scheduler'
+
+
+Import trace:
+  Browser:
+    ./node_modules/react-dom/cjs/react-dom-client.production.js
+    ./node_modules/react-dom/client.js
+    ./node_modules/next/dist/client/index.js
+    ./node_modules/next/dist/client/next-turbopack.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/ContactSection.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ContactSection.tsx:5:1
+Export Github doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ProjectsSection.tsx:4:1
+Export Github doesn't exist in target module
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { motion, useMotionTemplate, useMotionValue, useTransform } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mGithub[0m, [33mExternalLink[0m, [33mCode[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mProject[0m {
+  [90m7 |[0m   title: string;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ProjectsSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ProjectsSection.tsx:4:1
+Export Github doesn't exist in target module
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { motion, useMotionTemplate, useMotionValue, useTransform } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mGithub[0m, [33mExternalLink[0m, [33mCode[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36minterface[0m [33mProject[0m {
+  [90m7 |[0m   title: string;
+
+The export Github was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import Gift?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ProjectsSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ContactSection.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ContactSection.tsx:5:1
+Export Linkedin doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Linkedin was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import Link?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ContactSection.tsx:5:1
+Export Twitter doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+./src/components/ContactSection.tsx:5:1
+Export Twitter doesn't exist in target module
+  [90m3 |[0m [36mimport[0m { useState } [36mfrom[0m [32m"react"[0m;
+  [90m4 |[0m [36mimport[0m { motion } [36mfrom[0m [32m"framer-motion"[0m;
+[31m[1m>[0m [90m5 |[0m [36mimport[0m { [33mMail[0m, [33mMapPin[0m, [33mSend[0m, [33mGithub[0m, [33mLinkedin[0m, [33mTwitter[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m6 |[0m
+  [90m7 |[0m [36mexport[0m [36mdefault[0m [36mfunction[0m [33mContactSection[0m() {
+  [90m8 |[0m   [36mconst[0m [formData, setFormData] = useState({ name: [32m""[0m, email: [32m""[0m, message: [32m""[0m });
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/ContactSection.tsx
+    ./src/app/page.tsx
+
+
+    at moduleFactory (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:57:5) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:840:9])
+    at instantiateModule (turbopack:///[turbopack]/nodejs/runtime/build-base.ts:90:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:864:12])
+    at getOrInstantiateModuleFromParent (turbopack:///[turbopack]/shared/runtime/runtime-utils.ts:440:10) [C:\Users\nawan\OneDrive\Desktop\Portfolio\digital-portfolio\.next\build\chunks\[turbopack]_runtime.js:289:12])
+    ... collapsed 3 duplicate lines matching above lines ...
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at ./node_modules/ (react-three/fiber/dist/events-5a94e5eb.esm.js:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at ./node_modules/ (react-three/fiber/dist/react-three-fiber.esm.js:10:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/ContactSection.tsx:5:1)
+    at <unknown> (./src/components/ContactSection.tsx:5:1)
+    at <unknown> (./src/components/ProjectsSection.tsx:4:1)
+    at <unknown> (./src/components/ProjectsSection.tsx:4:1)
+    at <unknown> (./src/components/ContactSection.tsx:5:1)
+    ... collapsed 3 duplicate lines matching above 1 lines 3 times...
