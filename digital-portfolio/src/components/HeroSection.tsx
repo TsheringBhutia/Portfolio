@@ -63,7 +63,7 @@ export default function HeroSection() {
           </a>
 
           <a
-            href={process.env.NODE_ENV === "production" ? "/Portfolio/resume.pdf" : "/resume.pdf"}
+            href="resume.pdf"
             download="resume.pdf"
             className="group px-8 py-3 bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/30 text-indigo-300 rounded-lg flex items-center space-x-2 transition-all glass"
           >
